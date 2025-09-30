@@ -7,31 +7,31 @@ This will print three horse names assigned to different horses
 
 public class HorseProgram {
     public static void main(String[] args) {
-        // Create three Horse objects with different names and birth years
+        // Create three Horse objects with name and birth year
         Horse horse1 = new Horse("Silver", 2000);
         Horse horse2 = new Horse("Trigger", 1998);
         Horse horse3 = new Horse("Spirit", 2005);
 
-        // Print out each horse
+        // Print the horses
         System.out.println(horse1);
         System.out.println(horse2);
         System.out.println(horse3);
     }
 }
 
-// Horse class (included in the same file)
 class Horse {
     String name;
     int birthYear;
 
-    // Constructor
+    // Constructor with parameters in order: name (String), birth year (int)
     public Horse(String horseName, int year) {
         name = horseName;
         birthYear = year;
     }
 
-    // toString method to print horse info
+    // toString method to display horse info
     public String toString() {
         return name + " (Born: " + birthYear + ")";
     }
 }
+
